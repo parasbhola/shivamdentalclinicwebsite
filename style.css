@@ -1,0 +1,427 @@
+/* Global Reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* Container Styles */
+.Container {
+  width: 100%;
+  background-color: rgb(213, 237, 236);
+}
+
+/* Navigation Styles */
+nav {
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: right; /* Align navigation items to the right */
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px; /* Adjust margin between navigation items */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Remove margin for the first navigation item */
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 10px; /* Add padding to adjust spacing around navigation items */
+}
+.btn{
+font-family: "Roboto",sans-serif;
+font-size: 18px;
+font-weight: bold;
+display: flex;
+background: rgb(180, 196, 104);
+width: 160px;
+align-items: center; 
+justify-content: center;
+margin-right: 20px;
+text-decoration: none;
+text-transform: uppercase;
+color: black;
+border-radius: 5px;
+cursor: pointer;
+box-shadow: 0 0 10px rgb(0,0,0,0,0.1) ;
+transition-duration: 0.3s;
+
+}
+.btn:hover{
+box-shadow: 0 0 20px rgba(0,0,0,0.5);
+-webkit-transform:scale(1.1) ;
+transform: scale(1.1);
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    text-align: center; /* Center align navigation items on smaller screens */
+  }
+
+  nav ul li {
+    margin: 0 10px; /* Adjust margin for smaller screens */
+
+  }
+
+  nav ul li a {
+   
+    padding: 0 17px; /* Add padding to adjust spacing around navigation items */
+  }
+}
+
+/* Banner Styles */
+.tagline {
+  font-family: 'PT Serif', serif;
+  font-weight: 700; /* Bold */
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5%; /* Adjust margin relative to container's height */
+  margin-left: 10%; /* Fixed margin */
+
+}
+
+.Welcome {
+  font-family: 'PT Serif', serif;
+  font-weight: 400; /* Regular */
+  font-size: 30px; /* Default font size for content */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10%; /* Fixed margin */
+  margin-top: 20px;
+
+}
+
+
+
+
+.number {
+  font-size: 16px;
+  font-family: 'PT Serif', serif;
+  font-weight: 400; /* Regular */
+  font-size: 30px; /* Default font size for content */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5%;
+
+  margin-left: 15%; /* Fixed margin */
+
+
+
+}
+
+
+/* .call-icon
+{display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 50px; */
+
+
+
+  .image 
+      {
+       display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   width: 80%;
+   padding-left: 30%;
+
+ 
+      }
+
+      .text{
+        
+          font-family: 'PT Serif', serif;
+          font-weight: 400; /* Regular */
+          font-size: 20px; /* Default font size for content */
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-left: 10%; /* Fixed margin */
+          margin-top: 20px;
+        
+        
+
+      }
+  
+  
+@media screen and (max-width: 768px) {
+
+  .image {
+    width: 90%;
+    padding-left: 20px; /* Adjust pixel value for mobile screens */
+    padding-bottom: 10px; /* Adjust pixel value for mobile screens */
+    padding-top: 20px;
+  }
+
+
+  .tagline {
+    font-size: 30px; /* Adjust font size for smaller screens */
+    margin-top: 8%; /* Adjust margin for smaller screens */
+  }
+
+  .Welcome {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    margin-top: 1%; /* Adjust margin for smaller screens */
+  }
+{
+  .number,
+  padding-left: 25px;
+}
+  .contact-btn {
+
+    margin-left:30%; /* Remove fixed margin for smaller screens */
+    
+    margin-top: 10%;
+    text-align: center; /* Center-align elements for smaller screens */
+  }
+
+  .number {
+    margin-top: 2%; /* Adjust margin for smaller screens */
+  }
+
+  .contact-btn {
+    margin-top: 20px; /* Add margin to create space */
+  }
+  
+}
+.contact-btn {
+  
+  font-size: 16px; /* Adjust font size as needed */
+ /* Adjust padding for mobile devices */
+  margin-top: 50px; /* Add margin to separate from the number */
+  margin-left: 15%; /* Align with the number */
+  padding: 5px;
+  background:rgb(180, 196, 104);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0);
+
+}
+.contact-btn:hover{
+box-shadow: 0 0 20px rgba(0,0,0,0.5);
+-weebkit-transform scale: (1.1);
+transorm: scale(1.1);
+}
+
+
+
+
+.about-container {
+  background-color: rgb(213, 237, 236);
+  display: flex;
+  align-items: center; /* Center the items vertically */
+}
+
+.about-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%; /* Ensure the image doesn't exceed its container */
+  padding-left: 10%;
+ 
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  
+}
+.main {
+  flex: 1; /* Allow the main content to grow and fill the remaining space */
+}
+
+.about-text {
+  max-width: 85%; /* Adjust the size as needed */
+  padding-left: 10px;
+}
+.Ab_us{
+  
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+font-size: 30px;
+  padding-bottom: 10%;
+}
+
+.Name{
+
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.Detail{
+font-size: 20px
+
+}
+
+@media (max-width: 768px) {
+
+  .Ab_us{
+  width: 40%;
+  margin-top: 16px;
+  padding-top: 8px;
+}
+
+
+  .about-image {
+   
+   width: 40%;}
+
+.Name
+ {
+  font-size: 25px;
+  padding-bottom: 10px;
+
+  }
+.Detail{
+font-size: 16px;
+padding-bottom: 16px;
+
+}
+
+
+}
+/* Service Section Styles */
+.serivce {
+  padding: 50px;
+  background-color: rgb(201, 223, 222);;
+}
+
+.title h2 {
+  font-size: 30px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.card {
+  padding: 20px;
+}
+
+/* Contact Section Styles */
+.cclass {
+  padding: 50px;
+  text-align: center;
+  background-color:  rgb(201, 223, 222);;
+}
+
+.theHeading {
+  font-size: 30px;
+}
+
+.ccontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box2 {
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10%;
+
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.text2 {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.Address-text {
+padding-top: 1%;
+color: #000000;
+
+}
+
+.text-color{
+  color: #000000;
+}
+.Timings{
+  color: #000000;
+}
+.Timings-{
+  color: #000000;
+}
+
+.Phone{
+  color: #000000;
+}
+ .Phone-text{
+  color: #000000;
+}
+
+.Timings{
+
+  color: #000000;
+}
+
+ .mapcant {
+  
+ 
+  display: flex;
+align-items: center;
+justify-content: flex-end;
+justify-self: first baseline;
+padding-top: 2%;
+} 
+
+
